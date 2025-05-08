@@ -3,108 +3,135 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>JamStep - Получай токены за шаги</title>
+    <title>JamStep - Ходи. Зарабатывай. Побеждай.</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
         body {
-            background-color: #0b0f1a;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            background: #0a0f1a;
+            color: #e0e6f8;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
         }
-        header, footer {
+        header {
             text-align: center;
-            padding: 20px;
-            background-color: #10141f;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #1b1f3b, #0a0f1a);
         }
-        h1 {
-            font-size: 2.5em;
-            color: #00ccff;
+        header h1 {
+            font-size: 4em;
+            color: #00e5ff;
+            margin: 0;
+            text-shadow: 0 0 20px #00e5ff;
+        }
+        header p.subtitle {
+            font-size: 1.5em;
+            margin: 10px 0 30px;
+            color: #a0b0c8;
+        }
+        .token-img {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
         }
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
             text-align: center;
         }
-        .tokenomics, .roadmap {
-            max-width: 800px;
-            margin: 0 auto;
+        section h2 {
+            font-size: 2.5em;
+            color: #00e5ff;
+            margin-bottom: 20px;
         }
-        table {
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .highlight {
+            background: rgba(0,229,255,0.2);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .tokenomics table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #121c2f;
             margin-top: 20px;
+            background: #0f1525;
         }
-        table, th, td {
-            border: 1px solid #2e3b55;
+        .tokenomics th, .tokenomics td {
+            border: 1px solid #22304e;
+            padding: 12px;
+            text-align: center;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        .tokenomics th {
+            background: #192347;
+            color: #fff;
         }
-        .cta {
-            background-color: #00ccff;
-            color: #000;
+        .cta button {
+            background: #00e5ff;
+            color: #0a0f1a;
+            font-size: 1.2em;
             padding: 15px 30px;
             border: none;
-            font-size: 1em;
+            border-radius: 8px;
             cursor: pointer;
-            margin-top: 20px;
+            box-shadow: 0 0 15px #00e5ff;
+            transition: background 0.3s;
         }
-        .cta:hover {
-            background-color: #00b0e0;
+        .cta button:hover {
+            background: #00aacc;
         }
+        footer {
+            background: #101428;
+            color: #7280a0;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        audio { display: none; }
     </style>
 </head>
 <body>
-
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/06/audio_a5f0b8b84c.mp3" type="audio/mpeg">
+</audio>
 <header>
-    <h1>Добро пожаловать в JamStep</h1>
-    <p>Каждый шаг — это победа. Ходи, зарабатывай, побеждай вместе с JST.</p>
+    <h1>JamStep (JST)</h1>
+    <p class="subtitle">Ходи. Зарабатывай. Побеждай.</p>
+    <img src="token.png" alt="JamStep Token" class="token-img">
 </header>
 
 <section>
     <h2>О проекте</h2>
-    <p>JamStep — это платформа, которая платит за шаги. Мы используем блокчейн, чтобы превратить ваше движение в вознаграждение. Просто ходи и получай JST-токены. Всё просто.</p>
+    <p>JamStep — это революционная платформа Move-to-Earn: <span class="highlight">40% токенов (400&nbsp;000&nbsp;000 JST)</span> распределяются людям за обычные шаги в реальной жизни. Включи движение в свой ежедневный график и получай криптовалюту за заботу о своём здоровье.</p>
+    <p>Проект создан Jamshid Mavlanov и командой энтузиастов, чтобы вдохновлять и вознаграждать тебя за каждый шаг.</p>
 </section>
 
 <section class="tokenomics">
     <h2>Токеномика</h2>
     <table>
-        <tr><th>Категория</th><th>Количество JST</th></tr>
-        <tr><td>Общая эмиссия</td><td>1,000,000,000</td></tr>
-        <tr><td>Вознаграждение за шаги</td><td>400,000,000</td></tr>
-        <tr><td>Команда и разработка</td><td>150,000,000</td></tr>
-        <tr><td>Маркетинг и партнёрства</td><td>200,000,000</td></tr>
-        <tr><td>Ранние инвесторы</td><td>100,000,000</td></tr>
-        <tr><td>Резерв</td><td>150,000,000</td></tr>
+        <tr><th>Категория</th><th>Кол-во токенов</th><th>%</th></tr>
+        <tr><td>Move-to-Earn (за шаги)</td><td>400,000,000 JST</td><td>40%</td></tr>
+        <tr><td>Команда и разработка</td><td>150,000,000 JST</td><td>15%</td></tr>
+        <tr><td>Маркетинг и партнёрства</td><td>200,000,000 JST</td><td>20%</td></tr>
+        <tr><td>Ранние инвесторы</td><td>100,000,000 JST</td><td>10%</td></tr>
+        <tr><td>Резерв</td><td>150,000,000 JST</td><td>15%</td></tr>
     </table>
 </section>
 
-<section class="roadmap">
-    <h2>Дорожная карта (Roadmap)</h2>
-    <ul style="list-style: none; padding-left: 0;">
-        <li><strong>Месяц 1:</strong> Запуск сайта и ранний доступ</li>
-        <li><strong>Месяц 2:</strong> Telegram-бот и Instagram</li>
-        <li><strong>Месяц 3:</strong> Airdrop для первых пользователей</li>
-        <li><strong>Месяц 4:</strong> Бета мобильного приложения</li>
-        <li><strong>Месяц 6:</strong> Запуск токена JST</li>
-        <li><strong>Месяц 9:</strong> Коллаборации с брендами</li>
-        <li><strong>Месяц 12:</strong> Релиз платформы и выплаты JST</li>
-    </ul>
-</section>
-
 <section>
-    <button class="cta">Присоединиться</button>
+    <div class="cta">
+        <button>Присоединиться к раннему доступу</button>
+    </div>
 </section>
 
 <footer>
     <p>© 2025 JamStep. Все права защищены.</p>
 </footer>
-
-<audio autoplay hidden>
-  <source src="https://cdn.pixabay.com/audio/2023/03/06/audio_a5f0b8b84c.mp3" type="audio/mpeg">
-</audio>
-
 </body>
 </html>
