@@ -1,69 +1,110 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>JamStep (JST)</title>
+    <meta charset="UTF-8">
+    <title>JamStep - Получай токены за шаги</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
-        header { background: #111; color: white; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 48px; margin-bottom: 10px; }
-        header p { font-size: 20px; color: #ccc; }
-        section { padding: 40px 20px; max-width: 960px; margin: auto; }
-        .hero-img { max-width: 200px; margin: 30px auto; display: block; }
-        .tokenomics { background: #fff; padding: 20px; border-radius: 8px; }
-        footer { background: #111; color: white; text-align: center; padding: 20px; }
-        h2 { color: #007BFF; }
+        body {
+            background-color: #0b0f1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #10141f;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #00ccff;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .tokenomics, .roadmap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #121c2f;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #2e3b55;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .cta {
+            background-color: #00ccff;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background-color: #00b0e0;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>JamStep (JST)</h1>
-    <p>WALK. EARN. REPEAT.</p>
-    <img src="token.png" alt="JamStep Token" class="hero-img"/>
+    <h1>Добро пожаловать в JamStep</h1>
+    <p>Каждый шаг — это победа. Ходи, зарабатывай, побеждай вместе с JST.</p>
 </header>
 
 <section>
     <h2>О проекте</h2>
-    <p>JamStep — это платформа Move-to-Earn, которая награждает пользователей криптовалютой JST за шаги в реальной жизни.</p>
-</section>
-
-<section>
-    <h2>Как это работает?</h2>
-    <ul>
-        <li>Шагай с телефоном</li>
-        <li>Получай токены JST</li>
-        <li>Используй их или сохраняй</li>
-    </ul>
+    <p>JamStep — это платформа, которая платит за шаги. Мы используем блокчейн, чтобы превратить ваше движение в вознаграждение. Просто ходи и получай JST-токены. Всё просто.</p>
 </section>
 
 <section class="tokenomics">
     <h2>Токеномика</h2>
-    <p>Общая эмиссия: <strong>1 000 000 000 JST</strong></p>
-    <ul>
-        <li>Пользователи (Move-to-Earn): 40%</li>
-        <li>Основатель: 15%</li>
-        <li>Команда: 15%</li>
-        <li>Резерв: 15%</li>
-        <li>Инвесторы: 15%</li>
+    <table>
+        <tr><th>Категория</th><th>Количество JST</th></tr>
+        <tr><td>Общая эмиссия</td><td>1,000,000,000</td></tr>
+        <tr><td>Вознаграждение за шаги</td><td>400,000,000</td></tr>
+        <tr><td>Команда и разработка</td><td>150,000,000</td></tr>
+        <tr><td>Маркетинг и партнёрства</td><td>200,000,000</td></tr>
+        <tr><td>Ранние инвесторы</td><td>100,000,000</td></tr>
+        <tr><td>Резерв</td><td>150,000,000</td></tr>
+    </table>
+</section>
+
+<section class="roadmap">
+    <h2>Дорожная карта (Roadmap)</h2>
+    <ul style="list-style: none; padding-left: 0;">
+        <li><strong>Месяц 1:</strong> Запуск сайта и ранний доступ</li>
+        <li><strong>Месяц 2:</strong> Telegram-бот и Instagram</li>
+        <li><strong>Месяц 3:</strong> Airdrop для первых пользователей</li>
+        <li><strong>Месяц 4:</strong> Бета мобильного приложения</li>
+        <li><strong>Месяц 6:</strong> Запуск токена JST</li>
+        <li><strong>Месяц 9:</strong> Коллаборации с брендами</li>
+        <li><strong>Месяц 12:</strong> Релиз платформы и выплаты JST</li>
     </ul>
 </section>
 
 <section>
-    <h2>Дорожная карта</h2>
-    <ol>
-        <li>Создание токена и whitepaper</li>
-        <li>Прототип и MVP</li>
-        <li>Запуск сайта и поиск инвесторов</li>
-        <li>Мобильное приложение (в разработке)</li>
-    </ol>
+    <button class="cta">Присоединиться</button>
 </section>
 
 <footer>
-    <p>© 2025 JamStep | Связь: info@jamstep.io</p>
+    <p>© 2025 JamStep. Все права защищены.</p>
 </footer>
+
+<audio autoplay hidden>
+  <source src="https://cdn.pixabay.com/audio/2023/03/06/audio_a5f0b8b84c.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
